@@ -7,12 +7,12 @@ metadata:
 spec:
   containers:
     - name: db
-      image: postgress:15-alpine
+      image: postgres:15-alpine
       env:
-       - name: POSTGRESS_USER
-         value: postgress
-       - name: POSTGRESS_PASSWORD
-         value: postgress
+       - name: POSTGRES_USER
+         value: postgres
+       - name: POSTGRES_PASSWORD
+         value: postgres
       ports:
         - containerPort: 5432
           name: db
